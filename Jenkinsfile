@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo "Esto es el build"
+                echo "agrego otra linea"
             }
         }
         stage('Test') { 
