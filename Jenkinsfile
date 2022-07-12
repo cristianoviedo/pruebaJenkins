@@ -10,7 +10,7 @@ pipeline {
         stage('Scan') { 
             steps {
                 withSonarQubeEnv('sonarqube'){
-                    sh 'mvn sonar:sonar' 
+                    sh 'mvn sonar:sonar -Dsonar.login=squ_1dc30ebe4aa0f5344d05949c973f8caa8ecae919' 
                 }
             }
         }
