@@ -5,7 +5,6 @@ pipeline {
             steps {
                 echo "Esto es el build"
                 echo "agrego otra linea"
-                java -version
             }
         }
         stage('Scan') { 
